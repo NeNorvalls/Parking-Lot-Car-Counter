@@ -7,19 +7,19 @@ const errorMessage = () => (message.innerHTML = "No Cars To Subtract");
 const changeMessage = (x) => (message.innerHTML = `One car was ${x}`);
 
 const add = () => {
-    count += 1;
-    changeCount();
-    changeMessage("added");
+  count += 1;
+  changeCount();
+  changeMessage("added");
 };
 
 const subtract = () => {
-    if (count > 0) {
-        count -= 1;
-        changeCount();
-        changeMessage("subtracted");
-    } else {
-        errorMessage();
-    }
+  if (count > 0) {
+    count -= 1;
+    changeCount();
+    changeMessage("subtracted");
+  } else {
+    errorMessage();
+  }
 };
 
 const buttonAdd = document.getElementById("add");
